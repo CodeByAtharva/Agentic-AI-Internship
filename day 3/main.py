@@ -1,8 +1,10 @@
-import csv
-from app import add
-'''with open("people1.csv","r") as f:
-    r=csv.reader(f)
-    for i in r:
-        print(i)'''
+from prompt_utils import clean_text, is_long_prompt
 
-print(add(2,3))
+text=" Write a detailed blog on Generative AI in simple words "
+print(f"Cleaned text: {clean_text(text)}")
+
+
+if is_long_prompt(text):   
+    print(f"it's long")
+else:
+    print(f"it's not long")
