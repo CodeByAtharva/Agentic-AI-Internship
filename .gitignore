@@ -1,3 +1,4 @@
 *.jpeg
 *.zip
 /*.zip
+.env
